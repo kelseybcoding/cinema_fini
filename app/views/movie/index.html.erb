@@ -4,9 +4,7 @@
 
 <% @movies.each do |movie| %>
   <div>
-    <h2><b><%= movie.title %></b> / <%= movie.rating %> / <%= movie.run_time %></h2>
-  </div>
-  <div>
-    <h3><%= sanitize(movie.summary) %></h3>
+    <h2><%= image_tag(movie.image_url) %><b><%= movie.title %></b> / <%= movie.rating %> / <%= movie.run_time %></h2>
+    <%= sanitize(movie.summary) %>
   </div>
 <% end %>
