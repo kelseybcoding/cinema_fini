@@ -1,10 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div id="movies" class="container">
 
 <h1>This Week at Cinema Fini</h1>
 
 <% @movies.each do |movie| %>
   <div>
     <h2><%= image_tag(movie.image_url) %><b><%= movie.title %></b> / <%= movie.rating %> / <%= movie.run_time %></h2>
-    <%= sanitize(movie.summary) %>
+    <p><%= sanitize(movie.summary) %></p>
   </div>
+  <div class="btn btn-success btn-lg">
+    <% movie.showtimes.each do |show| %>
+      <%= show.start_time %>  
+  </div> 
+    <% end %>
 <% end %>
+</div>
+
+
+
+  
+    
+   
+
+
+
+
+
+
+
