@@ -81,34 +81,41 @@
 # Showtime.create([{
 #   movie_id: 1, 
 #   screen_id: 1,  
-#   start_time: '11:00PM'},
+#   start_time: '11:00PM',
+#   ticket_price: 12 
+#   },
 
 # { movie_id: 2, 
 #   screen_id: 2,  
-#   start_time: '9:00PM'
+#   start_time: '9:00PM',
+#   ticket_price: 12
 # },
 
 # {
 #   movie_id: 3, 
 #   screen_id: 3, 
-#   start_time: '7:00PM'
+#   start_time: '7:00PM',
+#   ticket_price: 12
 # },
 
 # {
 #   movie_id: 4, 
 #   screen_id: 4,  
-#   start_time: '8:00PM'
+#   start_time: '8:00PM',
+#   ticket_price: 12
 # },
 
 # {
 #   movie_id: 5, 
 #   screen_id: 5,  
-#   start_time: '7:30PM'
+#   start_time: '7:30PM',
+#   ticket_price: 12
 # },
 
 # {
 #   movie_id: 6, 
 #   screen_id: 6,  
-#   start_time: '2:00PM'
+#   start_time: '2:00PM',
+#   ticket_price: 12
 # }
 # ])
