@@ -61,9 +61,54 @@
 
 ###### SCREENS ######
 # Screen.delete_all
-# Screen.create(name: 'Theater 1', seat_count: 80)
-# Screen.create(name: 'Theater 2', seat_count: 80)
-# Screen.create(name: 'Theater 3', seat_count: 100)
-# Screen.create(name: 'Theater 4', seat_count: 50)
-# Screen.create(name: 'Theater 5', seat_count: 100)
-# Screen.create(name: 'Theater 6', seat_count: 100)
+# Screen.create([
+#   { name: 'Theater 1', seat_count: 80 },
+#   { name: 'Theater 2', seat_count: 80 },
+#   { name: 'Theater 3', seat_count: 100 },
+#   { name: 'Theater 4', seat_count: 50 },
+#   { name: 'Theater 5', seat_count: 100 },
+#   { name: 'Theater 6', seat_count: 100 }
+# ])
+
+###### SHOWINGS ######
+# Showing.delete_all
+# Showing.create([{
+#   movie_id: 1, 
+#   screen_id: 1, 
+#   seats_sold: rand(1..80), 
+#   start_time: '11:00PM'},
+
+# { movie_id: 2, 
+#   screen_id: 2, 
+#   seats_sold: rand(1..80), 
+#   start_time: '9:00PM'
+# },
+
+# {
+#   movie_id: 3, 
+#   screen_id: 3, 
+#   seats_sold: rand(1..100), 
+#   start_time: '7:00PM'
+# },
+
+# {
+#   movie_id: 4, 
+#   screen_id: 4, 
+#   seats_sold: rand(1..50), 
+#   start_time: '8:00PM'
+# },
+
+# {
+#   movie_id: 5, 
+#   screen_id: 5, 
+#   seats_sold: rand(1..100), 
+#   start_time: '7:30PM'
+# },
+
+# {
+#   movie_id: 6, 
+#   screen_id: 6, 
+#   seats_sold: rand(1..100), 
+#   start_time: '2:00PM'
+# }
+# ])
