@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>This Week at Cinema Fini</h1>
+
+<% @movies.each do |movie| %>
+  <div>
+    <h2><b><%= movie.title %></b> / <%= movie.rating %> / <%= movie.run_time %></h2>
+  </div>
+  <div>
+    <h3><%= sanitize(movie.sumary) %></h3>
+  </div>
+<% end %>
