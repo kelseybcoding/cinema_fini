@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170304000309) do
+ActiveRecord::Schema.define(version: 20170304184912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,11 +48,18 @@ ActiveRecord::Schema.define(version: 20170304000309) do
 
   create_table "movies", force: :cascade do |t|
     t.string   "title"
-    t.text     "sumary"
+    t.text     "summary"
     t.string   "rating"
     t.string   "run_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "purchased_tickets", force: :cascade do |t|
+    t.string   "ticket_order_id"
+    t.decimal  "purchase_price",  precision: 8, scale: 2
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
   end
 
   create_table "screens", force: :cascade do |t|
@@ -62,29 +69,23 @@ ActiveRecord::Schema.define(version: 20170304000309) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "showings", force: :cascade do |t|
+  create_table "showtimes", force: :cascade do |t|
     t.integer  "movie_id"
     t.integer  "screen_id"
-    t.integer  "seats_sold"
     t.string   "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "tickets", force: :cascade do |t|
-    t.integer  "showing_id"
+  create_table "ticket_orders", force: :cascade do |t|
+    t.integer  "showtime_id"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
     t.integer  "cc_number"
     t.string   "expiry"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
