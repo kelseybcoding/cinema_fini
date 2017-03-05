@@ -11,14 +11,12 @@
   </div>
   <div>
     <% movie.showtimes.each do |show| %>
-    <%= link_to show.start_time, '/ticket_orders/new', method: :get, class: "btn btn-success btn-lg" %>
+    <%= link_to show.start_time, '/showtimes/:showtime_id/ticket_orders/new', method: :get, class: "btn btn-success btn-lg" %>
+    <%= number_to_currency(show.ticket_price) %>
   </div> 
     <% end %>
 <% end %>
 </div>
-
-
-
 
   
     

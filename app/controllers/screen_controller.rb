@@ -1,3 +1,0 @@
-class ScreenController < ApplicationController
- 
-end

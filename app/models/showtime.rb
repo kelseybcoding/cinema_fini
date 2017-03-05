@@ -1,8 +1,8 @@
 class Showtime < ApplicationRecord
   belongs_to :movie
   belongs_to :screen
+  has_many :ticket_orders
 
-  validates :movie_id, :screen_id, :start_time, presence: true
-  validates :screen_id, uniqueness: { scope: :start_time }
+  validates :movie_id, :screen_id, :start_time, :ticket_price, presence: true
 end
 

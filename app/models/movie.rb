@@ -1,7 +1,5 @@
 class Movie < ApplicationRecord
-  has_one :screen
   has_many :showtimes
-  has_many :ticket_orders
   has_many :ticket_orders, through: :showtimes
 
   validates :title, :rating, :summary, :run_time, :image_url, presence: true #checks that these fields aren't empty

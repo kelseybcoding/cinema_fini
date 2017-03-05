@@ -1,4 +1,7 @@
-
+<ul id="well">
+  <li>Movie: <%= @showtime.movie.title %></li>
+  <li>Showtime: <%= @showtime.start_time %></li>
+</ul>
 <%= form_for [:showtime, @ticket_order], :html => {:class=>"form-horizontal center", :role=>"form"} do |f| %>
   <div class="form-group">
     <%= f.label :first_name, class:"control-label col-sm-2" %>
