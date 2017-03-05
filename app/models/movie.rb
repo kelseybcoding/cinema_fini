@@ -1,5 +1,8 @@
 class Movie < ApplicationRecord
+  has_one :screen
   has_many :showtimes
+  has_many :ticket_orders
+  has_many :ticket_orders, through: :showtimes
 
   validates :title, :rating, :summary, :run_time, :image_url, presence: true #checks that these fields aren't empty
   validates :title, uniqueness: true #checks that the title is unique among all movies
@@ -8,3 +11,4 @@ class Movie < ApplicationRecord
     message: 'must be URL for GIF, JPG, or PNG image.' 
   }
 end
+

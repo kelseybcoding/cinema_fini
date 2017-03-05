@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root 'movie#index', as: 'movie_index'
   resources :movies
-  resources :screens
+  resources :showtimes
+  resources :ticket_orders
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
