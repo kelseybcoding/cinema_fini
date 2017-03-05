@@ -1,10 +1,54 @@
-<h1>Cinema Fini</h1>
+<h3>New Ticket Purchase</h3>
+<h4><em>Please fill out the following information to complete your purchase</h4>
+
+<%= form_for(ticket_order) do |f| %>
+  <% if ticket_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ticket_order.errors.count, "error") %> prohibited this ticket from being purchased:</h2>
+
+      <ul>
+      <% ticket_order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!-- FIRST NAME -->
+<div class="form-group">
+  <%= f.hidden_field :first_name %>
+  <%= f.text_field :first_name, placeholder: "First Name" %>
+</div>
+
+<!-- LAST NAME -->
+  <div class="form-group">
+    <%= f.hidden_field :last_name %>
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+  </div>
+
+<!-- EMAIL -->
+  <div class="form-group">
+    <%= f.hidden_field :email %>
+    <%= f.email_field :email, placeholder: "Email Address" %>
+  </div>
+
+<!-- CREDIT CARD -->
+  <div class="form-group">
+    <%= f.hidden_field :cc_number %>
+    <%= f.text_field :cc_number, placeholder: "Credit Card Number" %>
+  </div>
+
+<!-- EXPIRY -->
+  <div class="form-group">
+    <%= f.hidden_field :expiry %>
+    <%= f.text_field :expiry, placeholder: "Expiration Date" %>
+  </div>
+
+<!-- TOTAL CHARGED -->
 
 
+<%= link_to 'Complete Purchase!', '/ticket_orders', method: :post, class: "btn btn-success btn-lg" %>
 
+<% end %>
 
-
-
-
-  
 
