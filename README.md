@@ -110,7 +110,7 @@ Else display number of seats remaining
 
 
 ## My Process In A Nutshell:
-![idea process](https://github.com/kelseybcoding/cinema_fini/tree/master/app/assets/images/process.jpg)
+![poorlydrawnlines.com process](http://www.poorlydrawnlines.com/wp-content/uploads/2014/07/process.png)
 
 
 
