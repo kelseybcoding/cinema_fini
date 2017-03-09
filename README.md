@@ -110,6 +110,7 @@ Else display number of seats remaining
 
 
 ## My Process In A Nutshell:
+`We've all been there, right?`
 ![poorlydrawnlines.com process](http://www.poorlydrawnlines.com/wp-content/uploads/2014/07/process.png)
 
 
