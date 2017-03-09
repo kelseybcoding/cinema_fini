@@ -76,10 +76,14 @@ I installed ActiveAdmin from the beginning and spent a small amount of time goin
 * Ticket purchase data is not saving to the DB as it should. I was having trouble determining how to have the showtime/movie/screen data save to the ‘ticket_orders’ table along with the user’s name, email, credit card number and expiration date. They all need to be related and saved together as that instance of a ticket order, so the theater owner can access.
   * With that said, I think my associations may be incorrect and/or my controller actions need adjusting.
 
-* Need some sort of counter logic to keep track of tickets sold/remaining seats, so when a ticket is purchased for a movie and it’s corresponding screen, it counts down (maybe number of tickets remaining can display in the view). Could also display “SOLD OUT” on index page for particular movie when no more tickets are available. Possible pseudo-code?
-If screen_id/movie_id’s seat_count is <= 0 
+* Need some sort of counter logic to keep track of tickets sold/remaining seats, so when a ticket is purchased for a movie and it’s corresponding screen, it counts down (maybe number of tickets remaining can display in the view). Could also display “SOLD OUT” on index page for particular movie when no more tickets are available.
+  * Possible pseudo-code?
+  * 
+```ruby
+If screen_id/movie_id’s seat_count is <= 0
 then display “SOLD OUT” in that movie’s listing on index page
 Else display number of seats remaining
+```
 
 * I need to build the admin side of things. I really think that ActiveAdmin is a lovely polished solution to the needs of the theater owner. However, it would take a little time to learn, and for this MVP, I could have better spent my time using basic CRUD views to allow the theater owner to create and add movies, screens, showtimes, and see index views filtered to show all ticket sales and ticket sales my movie.
 
