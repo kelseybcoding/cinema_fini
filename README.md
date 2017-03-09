@@ -56,7 +56,6 @@ With all of that said, this challenge really drove home the personal realization
 | Ability to set which movie is showing in which auditorium      | Can only buy 1 ticket at a time (for now)                                   |
 | Ability to keep track of sales                                 | Can checkout via form requiring name, email, CC number, and expiration date |
 | Order info saved to database                                   |                                                                             |
-------------------------------------------------------------------------------------------------------------------------------------------------
 
 | **FINISHING TOUCHES**|
 | ------------------------------------- |
