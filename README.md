@@ -3,6 +3,7 @@
 ## This app requires:
 
 Database: postgresql
+
 source 'https://rubygems.org'
 ```ruby
 ruby ‘2.3.1’
@@ -39,6 +40,14 @@ With all of that said, this challenge really drove home the personal realization
 
 **_THEATER OWNER_** uses Cinema Fini’s admin interface to be able to add, edit, or delete movie listings and showtimes, manage seating capacities and auditoriums, in addition to assigning movies to their auditoriums. The owner also needs to be able to conveniently track and review ticket sales stored in the database. For this MVP version that means being able to view all sales and view sales by movie via filtering. In the future, there would most-likely be additional admin features to keep track of user (customer) information, add and manage variations on ticket pricing, such as matinee and regular pricing, and pricing for adults, seniors, and students, etc.
 
+## **BREAKING IT DOWN**
+
+| **WHAT YOU DON'T NEED TO WORRY ABOUT**|
+| ------------------------------------- |
+| - “Shopping Cart”                     |
+| - Credit Card Processor               |
+| - User Authentication                 |
+-----------------------------------------
 
 
 
