@@ -49,6 +49,15 @@ With all of that said, this challenge really drove home the personal realization
 | - User Authentication                 |
 -----------------------------------------
 
+| **CLIENT INTERFACE**                                        | **USER INTERFACE** |
+| ------------------------------------------------------------| :-----------------:|
+| - Ability to manage seating capacities & movies playing     |
+| - Ability to add auditoriums & seating capacities for each  |
+| - Ability to set which movie is showing in which auditorium |
+| - Ability to keep track of sales                            |
+| ..* Order info saved to database                            |
+---------------------------------------------------------------
+
 
 
 
