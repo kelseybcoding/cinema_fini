@@ -2,7 +2,7 @@ class TicketOrdersController < ApplicationController
   
   def new
     @ticket_order = TicketOrder.new
-    @showtime = Showtime.find(params[:showtime_id])
+    # @showtime = Showtime.find(params[:showtime_id])
   end
 
   def create
