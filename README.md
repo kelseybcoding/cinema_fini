@@ -29,16 +29,20 @@ gem 'devise'
 ```
 
 ## ActiveAdmin:
-_When initially exploring ActiveAdmin, I noticed it was not responsive in the least. While using chrome devtools to see how the admin dashboard looked in the various device sizes, I thought it looked like hell, so I googled “making ActiveAdmin responsive” and found a [gem that does just that](https://github.com/ball-hayden/responsive_active_admin)!_
-
-*  Run rails g active_admin:install to get it going
-*  Devise needs to be installed in order to get the generator to run
-*  In order to avoid [this error](https://github.com/activeadmin/activeadmin/issues/4679) make sure the ActiveAdmin gem used is the master branch shown above
-* The [inherited_resources gem](https://github.com/activeadmin/inherited_resources) is for added Rails 5 support
 [ActiveAdmin Demo Site](http://demo.activeadmin.info/admin)
 [ActiveAdmin Github](https://github.com/activeadmin/activeadmin)
 [Responsive ActiveAdmin](https://github.com/ball-hayden/responsive_active_admin)
 
+_When initially exploring ActiveAdmin, I noticed it was not responsive in the least. While using chrome devtools to see how the admin dashboard looked in the various device sizes, I thought it looked like hell, so I googled “making ActiveAdmin responsive” and found a [gem that does just that](https://github.com/ball-hayden/responsive_active_admin)!_
+
+### Other Info:
+*  Run rails g active_admin:install to get it going
+*  Devise needs to be installed in order to get the generator to run
+*  In order to avoid [this error](https://github.com/activeadmin/activeadmin/issues/4679) make sure the ActiveAdmin gem used is the master branch shown above
+*  The [inherited_resources gem](https://github.com/activeadmin/inherited_resources) is for added Rails 5 support
+*  Active Admin relies heavily on auto-generated code and a pretty massive DSL to customize the admin interface
+*  Creates admin user model and uses devise for admin authentication, so regular users are separated out from admin user, keeping it super secure
+*  [This GoRails tutorial is a nice basic introduction](https://www.youtube.com/watch?v=NJYtzznKrg0)
 
 #Summary:
 I did not get as far as I would have liked with this challenge, but I learned A TON. After spending time organizing tasks, use cases, and researching some options for the admin needs of this site, I started to dive in and quickly realized my Rails was more rusty than I has thought (pun intended!). My current freelance development work has been more front-end based and has kept me from keeping my RoR skills alive and growing. I spent a good amount of time initially reviewing and toying around with a test app to get re-acquainted with Rails.
