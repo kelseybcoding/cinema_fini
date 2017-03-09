@@ -1,7 +1,7 @@
 # Cinema Fini App - Code Challenge
 
 ## Summary:
-I did not get as far as I would have liked with this challenge, but I learned A TON. After spending time organizing tasks, use cases, and researching some options for the admin needs of this site, I started to dive in and quickly realized my Rails was more rusty than I has thought (pun intended!). My current freelance development work has been more front-end based and has kept me from keeping my RoR skills alive and growing. I spent a good amount of time initially reviewing and toying around with a test app to get re-acquainted with Rails.
+I did not get as far as I would have liked with this challenge, but I learned A TON. After spending time organizing tasks, use cases, and researching some options for the admin needs of this site, I started to diving into the coding of it and quickly realized my Rails was more rusty than I has thought `pun intended!`. My current freelance development work has been more front-end based and has kept me from keeping my RoR skills alive and growing. I spent a good amount of time initially reviewing and toying around with a test app to get re-acquainted with Rails.
 
 I decided to stop where I was and simply share with you my process leading up to the start of my coding this app and what I have coded so far. I plan to continue with this challenge on my own time as it will be a great way to get some more practice in.
 
@@ -107,6 +107,10 @@ Else display number of seats remaining
 * Bootstrap is installed, but I had no plans to tackle the responsive styling for the most part until it was actually function properly
 
 * Not pushed to heroku, obviously.
+
+
+## My Process In A Nutshell:
+![idea process](https://github.com/kelseybcoding/cinema_fini/tree/master/app/assets/images/process.jpg)
 
 
 
