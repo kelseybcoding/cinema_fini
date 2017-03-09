@@ -32,7 +32,13 @@ I did not get as far as I would have liked with this challenge, but I learned A 
 
 I decided to stop where I was and simply share with you my process leading up to the start of my coding this app and what I have coded so far. I plan to continue with this challenge on my own time as it will be a great way to get some more practice in.
 
-With all of that said, this challenge really drove home the personal realization that where I shine most is in planning, researching, and organizing projects like these. I started by taking the challenge description and breaking it down into requirements of the client interface (theater owner) and the requirements of the theater’s tcstomer interface (i.e. - regular user and admin user).
+With all of that said, this challenge really drove home the personal realization that where I shine most is in planning, researching, and organizing projects like these. I started by taking the challenge description and breaking it down into requirements of the client interface (theater owner) and the requirements of the theater’s customer interface (i.e. - regular user and admin user).
+
+## Basic MVP Use Cases:
+**_MOVIE PATRON_** is the customer of Launchpad’s client, Cinema Fini. They use Cinema Fini’s web app to browse movies and showtimes currently available, see how many seats are available, purchase tickets easily, and receive an emailed confirmation and receipt of their ticket.
+
+**_THEATER OWNER_** uses Cinema Fini’s admin interface to be able to add, edit, or delete movie listings and showtimes, manage seating capacities and auditoriums, in addition to assigning movies to their auditoriums. The owner also needs to be able to conveniently track and review ticket sales stored in the database. For this MVP version that means being able to view all sales and view sales by movie via filtering. In the future, there would most-likely be additional admin features to keep track of user (customer) information, add and manage variations on ticket pricing, such as matinee and regular pricing, and pricing for adults, seniors, and students, etc.
+
 
 
 
