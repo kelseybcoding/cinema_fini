@@ -51,12 +51,12 @@ With all of that said, this challenge really drove home the personal realization
 
 | **CLIENT INTERFACE**                                        | **USER INTERFACE** |
 | ------------------------------------------------------------| :-----------------:|
-| - Ability to manage seating capacities & movies playing     |
-| - Ability to add auditoriums & seating capacities for each  |
-| - Ability to set which movie is showing in which auditorium |
-| - Ability to keep track of sales                            |
-| ..* Order info saved to database                            |
----------------------------------------------------------------
+| - Ability to manage seating capacities & movies playing     | Can see all movies currently playing along with their show times            |
+| - Ability to add auditoriums & seating capacities for each  | Cannot purchase tickets if sold out                                         |
+| - Ability to set which movie is showing in which auditorium | Can only buy 1 ticket at a time (for now)                                   |
+| - Ability to keep track of sales                            | Can checkout via form requiring name, email, CC number, and expiration date |
+|   * Order info saved to database                            |                                                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
