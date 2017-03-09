@@ -56,7 +56,20 @@ With all of that said, this challenge really drove home the personal realization
 | Ability to set which movie is showing in which auditorium      | Can only buy 1 ticket at a time (for now)                                   |
 | Ability to keep track of sales                                 | Can checkout via form requiring name, email, CC number, and expiration date |
 | Order info saved to database                                   |                                                                             |
----------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+| **FINISHING TOUCHES**|
+| ------------------------------------- |
+| - Use Bootstrap for responsive requirement as is easiest/fastest to implement for this MVP version                      |
+| - Create an immaculate ReadMe file                                                                                      |
+| - Submit the challenge by pushing code to Github, and deploying app to Heroku                                           |
+---------------------------------------------------------------------------------------------------------------------------
+
+##Building It:
+I thought it best to start with the interface for the theater patron. I began doodling wireframe flows and possible schemas that would all me to create the view to show all movies and their showtimes from the database, and then allow me to create the form view to collect purchase information from the user and save that ticket purchase to the DB. 
+
+I installed ActiveAdmin from the beginning and spent a small amount of time going through some tutorials on it, but didn’t deep dive into it. I felt it was more important to get the customer interface working properly, which is why, once I “settled” on a database schema and its associations, I seeded the ‘screens’, ‘movies’, and ‘showtimes’ tables with sample data in order to use when building out the app.
+
 
 
 
