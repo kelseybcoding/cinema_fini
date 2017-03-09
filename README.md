@@ -47,7 +47,6 @@ With all of that said, this challenge really drove home the personal realization
 | - “Shopping Cart”                     |
 | - Credit Card Processor               |
 | - User Authentication                 |
------------------------------------------
 
 | **CLIENT INTERFACE**                                           | **USER INTERFACE** |
 | ------------------------------------------------------------   | :-----------------:|
@@ -68,6 +67,24 @@ With all of that said, this challenge really drove home the personal realization
 I thought it best to start with the interface for the theater patron. I began doodling wireframe flows and possible schemas that would all me to create the view to show all movies and their showtimes from the database, and then allow me to create the form view to collect purchase information from the user and save that ticket purchase to the DB. 
 
 I installed ActiveAdmin from the beginning and spent a small amount of time going through some tutorials on it, but didn’t deep dive into it. I felt it was more important to get the customer interface working properly, which is why, once I “settled” on a database schema and its associations, I seeded the ‘screens’, ‘movies’, and ‘showtimes’ tables with sample data in order to use when building out the app.
+
+##Where I Left Off:
+* ActiveAdmin is installed and can be viewed at /admin, but it is not built for our client’s needs at this time
+
+* I currently have a very basic view of the sample movie data at the root page that shows one showtime (was planning to add more later per each movie) that the user can click and be taken to the purchase ticket form page. 
+
+Ticket purchase data is not saving to the DB as it should. I was having trouble determining how to have the showtime/movie/screen data save to the ‘ticket_orders’ table along with the user’s name, email, credit card number and expiration date. They all need to be related and saved together as that instance of a ticket order, so the theater owner can access.
+With that said, I think my associations may be incorrect and/or my controller actions need adjusting.
+
+Need some sort of counter logic to keep track of tickets sold/remaining seats, so when a ticket is purchased for a movie and it’s corresponding screen, it counts down (maybe number of tickets remaining can display in the view). Could also display “SOLD OUT” on index page for particular movie when no more tickets are available. Possible pseudo-code?
+If screen_id/movie_id’s seat_count is <= 0 
+then display “SOLD OUT” in that movie’s listing on index page
+Else display number of seats remaining
+
+I need to build the admin side of things. I really think that ActiveAdmin is a lovely polished solution to the needs of the theater owner. However, it would take a little time to learn, and for this MVP, I could have better spent my time using basic CRUD views to allow the theater owner to create and add movies, screens, showtimes, and see index views filtered to show all ticket sales and ticket sales my movie.
+I have not used action-mailer before, so I need to research that and configure in order to email ticket receipt to customer
+Bootstrap is installed, but I had no plans to tackle the responsive styling for the most part until it was actually function properly
+Not pushed to heroku, obviously.
 
 
 
