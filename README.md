@@ -30,7 +30,9 @@ gem 'devise'
 
 ## ActiveAdmin:
 [ActiveAdmin Demo Site](http://demo.activeadmin.info/admin)
+
 [ActiveAdmin Github](https://github.com/activeadmin/activeadmin)
+
 [Responsive ActiveAdmin](https://github.com/ball-hayden/responsive_active_admin)
 
 _When initially exploring ActiveAdmin, I noticed it was not responsive in the least. While using chrome devtools to see how the admin dashboard looked in the various device sizes, I thought it looked like hell, so I googled “making ActiveAdmin responsive” and found a [gem that does just that](https://github.com/ball-hayden/responsive_active_admin)!_
